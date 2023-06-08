@@ -19,7 +19,7 @@ main {
 }
 .content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     gap: 2rem;
     align-items: center;
     margin-top: 4rem;
@@ -81,7 +81,11 @@ main {
     opacity: 0;
     text-decoration: none;
 }
-
 .itens-img:hover .btn a {
     opacity: 1;
+}
+@media (max-width:480px) {
+    .text-prod h2 {
+        font-size: 1.5rem;
+    }
 }
