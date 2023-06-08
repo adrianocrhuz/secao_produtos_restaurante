@@ -1,0 +1,87 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    padding: 60px 14% 70px;
+}
+.novos-prod h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.text-prod h2 {
+    font-size: 2.3rem;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+    text-align: center;
+}
+.itens-img {
+    position: relative;
+    cursor: pointer;
+}
+
+.itens-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.itens-img h4 {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom:5px;
+    transition: all .50s ease;
+}
+.itens-img h4:hover {
+    color: red;
+    cursor: pointer;
+}
+.itens-img h5 {
+    font-size: 1.3rem;
+    color: #010101;
+    font-weight: 600;
+}
+.black {
+    position: absolute;
+    top:20px;
+    left: 0;
+    height: 30px;
+    width: 100px;
+    color: white;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.itens-img .btn a {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 13px;
+    color: white;
+    font-family: sans-serif;
+    transition: opacity 0.5s;
+    opacity: 0;
+    text-decoration: none;
+}
+
+.itens-img:hover .btn a {
+    opacity: 1;
+}
